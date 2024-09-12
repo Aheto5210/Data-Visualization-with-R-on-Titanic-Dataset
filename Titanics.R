@@ -60,5 +60,7 @@ ggplot(datan, aes(x = Age, fill = Survived))+ geom_density(alpha = 0.5)+
   labs(y = "Survived", x = "Age ", title = "Titanic Survival Rate by Age, Pclass and Sex")
 
 
-
+ggplot(datan, aes(x = Age, fill = Survived))+ geom_histogram(binwidth = 5)+ 
+  facet_wrap(Sex ~ Pclass) + theme_bw() + 
+  labs(y = "Survived", x = "Age ", title = "Titanic Survival Rate by Age, Pclass and Sex")
 
