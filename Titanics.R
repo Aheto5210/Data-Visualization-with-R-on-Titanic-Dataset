@@ -7,7 +7,7 @@ library(dplyr)
 
 
 #loading the Titanic Dataset
-datan <- read.csv("Data Visualization with R/Titanic-Dataset.csv", stringsAsFactors = FALSE)
+datan <- read.csv("Data-Visualization-with-R-on-Titanic-Dataset/Titanic-Dataset.csv", stringsAsFactors = FALSE)
 
 # number of NA values in the dataset
 sum(is.na(datan))
